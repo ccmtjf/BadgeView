@@ -151,7 +151,7 @@ public class IBadgeView {
      *
      * @param canvas
      */
-    protected void draw(Canvas canvas) {
+    public void draw(Canvas canvas) {
         if (isShowBadge) {
             if (mCount < 10) {//圆
                 canvas.drawCircle(mViewWidth - mBadgeWidth / 2 - mDefaultRightPadding, mBadgeHeight / 2 + mDefaultTopPadding, mDefaultRadius, mPaint);
@@ -172,7 +172,7 @@ public class IBadgeView {
      * @param w
      * @param h
      */
-    protected void onSizeChanged(int w, int h) {
+    public void onSizeChanged(int w, int h) {
         mViewWidth = w;
         mViewHeight = h;
 
